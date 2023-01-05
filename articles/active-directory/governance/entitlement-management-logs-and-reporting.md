@@ -181,7 +181,7 @@ You can also retrieve entitlement management events using a query like:
 
 ```azurepowershell
 $bQuery = 'AuditLogs | where Category == "EntitlementManagement"'
-$bResponse = Invoke-AzOperationalInsightsQuery -WorkspaceId $wks[0].CustomerId -Query $Query
+$bResponse = Invoke-AzOperationalInsightsQuery -WorkspaceId $wks[0].CustomerId -Query $bQuery
 $bResponse.Results |ft 
 ```
 
